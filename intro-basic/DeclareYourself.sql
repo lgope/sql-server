@@ -102,7 +102,7 @@ FROM album
     -- Join album to artist using artist_id
     INNER JOIN artist ON album.artist_id = artist.artist_id
     -- Join track to album using album_id
-    INNER JOIN track ON track.album_id = album.album_id
+    INNER JOIN track ON album.album_id = track.album_id
 GROUP BY artist.artist_id, album.title, artist.name,album.album_id
 -- Run the final SELECT query to retrieve the results from the temporary table
 SELECT album_title, artist, max_track_length_mins

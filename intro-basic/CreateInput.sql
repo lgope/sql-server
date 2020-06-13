@@ -1,3 +1,8 @@
+-- nvarchar vs varchar
+-- nvarchar support unicode
+-- varchar unicode not supported
+
+
 -- create database
 CREATE DATABASE databasename;
 
